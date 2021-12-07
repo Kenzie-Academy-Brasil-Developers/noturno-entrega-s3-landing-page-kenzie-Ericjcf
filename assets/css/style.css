@@ -29,7 +29,10 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    
+
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -39,9 +42,17 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
 
 img{
-    max-width: 300px;
+
+    max-width: 200px;
+    /* v.o = 300px */
 }
 
 div.flex{
@@ -52,10 +63,19 @@ div.full-container{
     max-width: 1850px;
     margin:0 auto;
 }
-div.large-container{
+/* div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+} */
+div.large-container{
+    width: 100%;
+    /* max-width: 1170px; */
+    margin:0 auto;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-around;
+    background-color: #00043E;
 }
 div.container{
     width: 100%;
@@ -63,28 +83,203 @@ div.container{
     margin:0 auto;
 }
 
-.inicial .secaoSobre{
+/* aqui vai o cabeçalho */
+.topo .large-container figure .logo-kenzie{
+    display: none;
+}
+
+nav{
+    margin-right: 6em;
+    margin-top: 2em;
+    height: 2em;
+    background-color: #00043e;
+}
+nav ul{
+    display: flex;
+​
+}
+nav ul li{
+    margin-left: 1em;
+    color:#FFFFFF;
+    height: 1em;
+}
+nav ul li a{
+   text-decoration: none;
+    color:#FFFFFF;
+    font-size: 13px;
+    opacity: 50%;
+}
+
+/* aqui começa o formulário eric */
+
+.inicial .secaoDestaque {
+    text-align: center;
+    background-image:  url("/assets/img/background-destaque.webp");
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+}
+.inicial .secaoDestaque h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 63px;
+    font-weight:normal;
+    margin-bottom: 10px;
+}
+
+.inicial .secaoDestaque p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.inicial .secaoDestaque input{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 500px 10px 0 ;
+    font-size: 14px;
     
+}
+
+.inicial .secaoDestaque button{
+    border: none;
+    background: rgb(102, 143, 219);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+/* aqui começa sessão eric */
+
+
+.inicial .secaoSobre .flex .flex-col figure img{
+    max-width: 500px;
+    height: 200px;
+    justify-self: stretch;
+}
+.inicial .secaoSobre .flex .flex-col figure{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inicial .secaoSobre {
+    font-size: 19px;
+    justify-items: center;
+}
+.inicial .secaoSobre h2{
+    font-size: 24px;
 }
 .inicial .secaoSobre .flex{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 200px;
+    margin-right: auto;
+    
     width: 90vw;
 }
 .inicial .secaoSobre .flex .flex-col{
+    display: flex;
+    flex-direction: column;
     width: 450px;
     margin: 50px;
 }
 .inicial .secaoSobre .flex .flex-col figcaption{
     display: none;
+}
+.inicial .secaoSobre .flex .flex-col p{
+    margin-top: 30px;
+}
+.inicial .secaoSobre .flex .flex-col span{
+    font-size: small;
+    margin-top: 30px;
+} 
+.inicial .secaoSobre .flex .flex-col button{
     
+    border: gray solid 1px;
+    border-radius: 4px;
+    
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+}
+
+.inicial .secaoSobre .flex .flex-col ul{
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+.inicial .secaoSobre .flex .flex-col li{
+    list-style: disc;
+    font-size: small;
+}
+
+/* aqui acaba eric */
+
+/* aqui seção nilo */
+
+footer{
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+footer svg{
+width: 1em;
+}
+
+.secaoCursos h2{
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 1em;
+}
+
+.secaoCursos article > p{
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 3em;
+}
+
+.secaoCursos ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.secaoCursos li{
+width: 30%;
+    }
+
+.icones:hover{
+    background: gray;
 }
 
 
+.secaoCursos h3{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+.secaoCursos p{
+    text-align: center;
+    font-size: 15px;
+}
 
+.secaoCursos img{
+    width: 4em;
+    align-items: center;
 
-/*  */
+}
+
+/* aqui acaba nilo */
+
 
 
 /* GERAL */
@@ -177,7 +372,9 @@ width: 30%;
 /* EXTRAS */
   
 
-/* MEDIA QUERIES */
+    @media screen and (min-width: 400px) {
+      
+    }
     @media screen and (max-width: 400px) {
         .secaoCursos ul{
     display: inline-block;
@@ -223,6 +420,22 @@ width: 30%;
     margin-right: auto;
     margin-bottom: 3em;
 }
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+
+/* MEDIA QUERY ERIC */
+.inicial .secaoSobre .flex .flex-col button{
+    
+    border: gray solid 1px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 80%;
+    height: 40px;
+}
+
+.inicial .secaoSobre .flex .flex-col figure img{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+}
