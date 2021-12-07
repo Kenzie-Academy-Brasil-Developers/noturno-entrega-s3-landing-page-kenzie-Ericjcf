@@ -39,9 +39,17 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
 
 img{
-    max-width: 300px;
+
+    max-width: 200px;
+    /* v.o = 300px */
 }
 
 div.flex{
@@ -63,8 +71,19 @@ div.container{
     margin:0 auto;
 }
 
-.inicial .secaoSobre{
-    
+/* aqui começa sessão eric */
+
+.inicial .secaoSobre .flex .flex-col figure img{
+    max-width: 500px;
+    height: 200px;
+    justify-self: stretch;
+}
+
+.inicial .secaoSobre {
+    font-size: 19px;
+}
+.inicial .secaoSobre h2{
+    font-size: 24px;
 }
 .inicial .secaoSobre .flex{
     display: flex;
@@ -73,13 +92,40 @@ div.container{
     width: 90vw;
 }
 .inicial .secaoSobre .flex .flex-col{
+    display: flex;
+    flex-direction: column;
     width: 450px;
     margin: 50px;
 }
 .inicial .secaoSobre .flex .flex-col figcaption{
     display: none;
-    
 }
+.inicial .secaoSobre .flex .flex-col p{
+    margin-top: 30px;
+}
+.inicial .secaoSobre .flex .flex-col span{
+    font-size: small;
+    margin-top: 30px;
+} 
+.inicial .secaoSobre .flex .flex-col button{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+}
+
+.inicial .secaoSobre .flex .flex-col ul{
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+.inicial .secaoSobre .flex .flex-col li{
+    list-style: disc;
+    font-size: small;
+}
+
+
+
 
 
 

@@ -1,0 +1,58 @@
+:root{
+    --Branco Primário: #FFFFFF;
+    --Branco Secundário: #f6f6f6;
+    --Azul Claro: #007aff;
+    --Azul Escuro: #00043e;
+    --Cinza Claro: #818181;
+    --Cinza Escuro: #303030;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;   
+    text-align: center;
+    
+}
+
+.container-meio{
+    background-color: #FFFFFF ;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+.container-meio .texto{
+    justify-items: center;
+    
+}    
+
+.container-meio .imagem figure{
+    text-align: center;
+}
+.container-meio .imagem figure img{
+    /* text-align: center; */
+    height: 150px;
+    width: 300px;
+}
+
+figcaption{
+    display: none;
+}
+
+.container-meio .botao-subscribe{
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-meio .botao-subscribe input{
+    
+    background-color: #FFFFFF;
+    padding: 10px 30px 10px 30px;
+    border: 2px rgb(196, 192, 192) solid;
+    border-radius: 3px;
+    color: black;
+    font-size: 20px;
+}
